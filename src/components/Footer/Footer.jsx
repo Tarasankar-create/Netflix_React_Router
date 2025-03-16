@@ -2,7 +2,7 @@ import React from 'react'
 import {Contents} from './Foptions'
 function Footer() {
   return (
-    <div className='max-w-[100%] lg:px-[150px] px-7 mt-[60px]'>
+    <div className='max-w-[100%] lg:px-[150px] px-7 pt-[50px] bg-[#2D2D2D]'>
     <p className='text-[white]'>Questions? Call 000-800-919-1743</p>
     <div className='max-w-[100%] mt-[40px] grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
       {Contents.map((value)=>{

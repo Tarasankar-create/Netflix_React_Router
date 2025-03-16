@@ -1,4 +1,4 @@
-import './Home_style.css'
+import '../../App.css'
 import React from 'react';
 import {Data} from './SliderImage.js';
 import {Card} from './Cards.jsx';
@@ -6,6 +6,7 @@ import { MdChevronLeft,MdChevronRight } from 'react-icons/md';
 import { useState } from 'react';
 import {Questions} from './QuestionList.js';
 import {Contents} from './Content.js';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -37,9 +38,9 @@ function Home() {
   }
   return (
     <div className="App">
-      <section id='section' className='w-[100%] h-[100%]' style={{backgroundImage:'url("https://genotipia.com/wp-content/uploads/2020/04/Netflix-Background-prueba-1.jpg")'}}>
+      <section id='section' className='cont w-[100%] h-[100%]'>
       {/* Banner section */}
-      <div className='w-[100%] h-[100%] bg-[rgba(7,7,7,0.7)] '>
+      <div className=' w-[100%] h-[100%] bg-[rgba(7,7,7,0.5)] '>
         <header className="max-w-[1170px] mx-auto sm:px-[0px] px-1">
           <div className='grid sm:grid-cols-2 grid-cols-[30%_auto] p-2 items-center relative '>
             <figure>
@@ -55,7 +56,7 @@ function Home() {
                   <option value="">Hindi</option>
                 </select>
               </div>
-              <button className='bg-[#f44336] rounded-[5px] text-white px-[10px] hover:bg-[rgb(198,9,20)] duration-300'>Sign in</button>
+              <Link to="/Login" className='bg-[#f44336] rounded-[5px] text-white px-[10px] hover:bg-[rgb(198,9,20)] duration-300'><span className='relative top-[5px]'>Sign in</span></Link>
             </div>
           </div>
         </header>

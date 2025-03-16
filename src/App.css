@@ -12,3 +12,11 @@
   max-height:0px;
   transition: max-height 0.6s ease-in-out;
 }
+
+.cont{
+  background-image:url("./assets/background.jpg");
+}
+
+.header{
+  background-image: url("./assets/Licon.png");
+}

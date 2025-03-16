@@ -1,42 +1,42 @@
 export const Data=[
     {
         id:1,
-        image:"/images/image_1.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:2,
-        image:"/images/image_2.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:3,
-        image:"/images/image_3.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:4,
-        image:"/images/image_4.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:5,
-        image:"/images/image_5.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:6,
-        image:"/images/image_6.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:7,
-        image:"/images/image_7.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:8,
-        image:"/images/image_8.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:9,
-        image:"/images/image_9.jpg"
+        image:"../../assets/image_1.jpg"
     },
     {
         id:10,
-        image:"/images/image_10.jpg"
+        image:"../../assets/image_1.jpg"
     },
 ]

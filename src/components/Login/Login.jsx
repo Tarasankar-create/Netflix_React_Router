@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 function Login() {
 
   return (
-    <div className='w-full h-screen bg-[url("./assets/background.jpg")] '>
-      <div className='h-screen flex justify-center bg-[rgba(0,0,0,0.4)] '>
-        <form className='w-[420px] h-[650px] flex flex-col mt-[50px] bg-[rgba(9,9,9,0.9)] p-11 gap-[14px]'>
+    <div className='w-full lg:h-[820px] sm:h-[780px] h-[720px] sm:bg-[url("/background.jpg")] bg-black '>
+      <div className='h-[850px] flex justify-center sm:bg-[rgba(0,0,0,0.4)] '>
+        <form className='w-[420px] h-[650px] flex flex-col lg:mt-[110px] sm:mt-[80px] mt-[50px] sm:bg-[rgba(0,0,0,0.9)] p-11 gap-[14px]'>
           <h1 className='text-white text-3xl mb-4 font-bold font-sans'>Sign in</h1>
           <input type='text' className='w-[100%] border-[1px] border-[#5e5f5f] p-4 bg-[rgba(0,0,0,0.1)] text-white ' placeholder='Email or mobile number'/>
           <input type='text' className='w-[100%] border-[1px] border-[#5e5f5f] p-4 bg-[rgba(0,0,0,0.1)] text-white ' placeholder='Password'/>

@@ -38,7 +38,7 @@ function Home() {
   }
   return (
     <div className="App">
-      <section id='section' className='cont w-[100%] h-[100%]'>
+      <section id='section' className='bg-[url("/background.jpg")] w-[100%] h-[100%]'>
       {/* Banner section */}
       <div className=' w-[100%] h-[100%] bg-[rgba(7,7,7,0.5)] '>
         <header className="max-w-[1170px] mx-auto sm:px-[0px] px-1">

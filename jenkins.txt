@@ -1,0 +1,40 @@
+pipeline {
+    agent {label "Rahul"}
+
+    stages {
+        stage('code') {
+            steps {
+                echo 'Cloning code'
+                git url: "https://github.com/Tarasankar-create/Netflix_React_Router.git", branch:"main"
+                echo "Code clone completed"
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'docker --version'
+                sh 'echo "Building image "'
+                sh 'docker build -t netflix-app .'
+                sh 'echo "Build complete"'
+            }
+        }
+        stage('deploy') {
+            steps {
+               echo 'Stopping old containers...'
+                sh 'docker-compose down || true'
+
+                echo 'Starting application...'
+                sh 'docker-compose up -d'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'Testing application...'
+                sh '''
+                    sleep 10
+                    curl -f http://localhost:3000 || exit 1
+                '''
+            }
+        }
+    }
+}
+

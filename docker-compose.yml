@@ -1,6 +1,6 @@
 services:
   node-app:
     build: .
-    container_name: Netflix
+    container_name: netflix
     ports:
       - "3000:80"

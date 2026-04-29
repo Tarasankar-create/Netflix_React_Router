@@ -17,7 +17,15 @@ pipeline {
         }
         stage('dockerhub') {
             steps {
-              echo "dockerhub"
+              echo "Pushing image to dockerhub"
+              withCredentials([usernamePassword(
+              credentialsId:"DockerhubCred", 
+              passwordVariable:"dockerhubPass", 
+              usernameVariable:"dockerhubUser")]){
+              sh "docker login -u ${env.dockerhubUser} -p ${dockerhubPass}"
+              sh "docker image tag netflix-node-app:latest ${env.dockerhubUser}/netflix-node-app:latest"
+              sh "docker push ${env.dockerhubUser}/netflix-node-app:latest"
+              }
             }
         }
         stage('test') {

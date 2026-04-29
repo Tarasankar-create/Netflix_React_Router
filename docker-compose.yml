@@ -1,6 +1,6 @@
 services:
   node-app:
     build: .
-    container_name: netflix
+    container_name: netflix:latest
     ports:
       - "3000:80"
